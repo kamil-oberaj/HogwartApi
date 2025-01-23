@@ -17,7 +17,7 @@ public sealed class FoodDiary
     public FoodDiary(DateTime date, params HashSet<int> foods)
     {
         Date = date;
-        Foods = foods;
+        Foods = foods.ToList();
     }
 
     public static FoodDiary Create(DateTime date, params HashSet<int> foods)
